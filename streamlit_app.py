@@ -9,7 +9,7 @@ def load_scimagojr(q):
     st.write(URL)
     resp = requests.get(URL)
     st.write(resp.status_code)
-    st.write(resp.text)
+    #st.write(resp.text)
     if resp.status_code == 200:
         st.write(resp.text)
        
@@ -22,5 +22,5 @@ def load_scimagojr(q):
 
 st.markdown('<p class="title1">APP KIỂM TRA BÀI BÁO TRONG DANH MỤC SCOPUS</p>', unsafe_allow_html=True)
 soup, resp = load_scimagojr('17576385')
-st.markdown(resp)
+#st.markdown(resp)
 components.iframe("https://www.scimagojr.com/journalsearch.php?q=21100774786&tip=sid&clean=0", height=500)

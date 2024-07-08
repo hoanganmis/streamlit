@@ -10,7 +10,8 @@ def load_scimagojr(q):
              fp.write(resp.text)
         soup = BeautifulSoup(resp.text, "html.parser")
    
-    return soup, resp.text
+        return soup, resp.text
+    return None, None
 
 st.markdown('<p class="title1">APP KIỂM TRA BÀI BÁO TRONG DANH MỤC SCOPUS</p>', unsafe_allow_html=True)
 soup, resp = load_scimagojr('17576385')

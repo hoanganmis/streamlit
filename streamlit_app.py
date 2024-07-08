@@ -6,7 +6,7 @@ import streamlit.components.v1 as components
 def load_scimagojr(q):
     # URL = f"https://www.scimagojr.com/journalsearch.php?q={q}"
     URL = 'https://www.khoahocdulieu.vn'
-    st.write(URL)
+    #st.write(URL)
     resp = requests.get(URL)
     st.write(resp.status_code)
     #st.write(resp.text)

@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 import streamlit as st
+import streamlit.components.v1 as components
 
 def load_scimagojr(q):
     # URL = f"https://www.scimagojr.com/journalsearch.php?q={q}"
@@ -22,3 +23,4 @@ def load_scimagojr(q):
 st.markdown('<p class="title1">APP KIỂM TRA BÀI BÁO TRONG DANH MỤC SCOPUS</p>', unsafe_allow_html=True)
 soup, resp = load_scimagojr('17576385')
 st.markdown(resp)
+components.iframe("https://www.scimagojr.com/journalsearch.php?q=21100774786&tip=sid&clean=0", height=500)

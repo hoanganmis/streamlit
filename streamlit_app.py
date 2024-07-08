@@ -4,7 +4,7 @@ import streamlit as st
 
 def load_scimagojr(q):
     # URL = f"https://www.scimagojr.com/journalsearch.php?q={q}"
-    URL = 'https://www.scimagojr.com/journalsearch.php'
+    URL = 'https://www.khoahocdulieu.vn'
     st.write(URL)
     resp = requests.get(URL)
     st.write(resp.status_code)

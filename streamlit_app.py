@@ -4,8 +4,10 @@ import streamlit as st
 
 def load_scimagojr(q):
     URL = f"https://www.scimagojr.com/journalsearch.php?q={q}"
+    st.write(URL)
     resp = requests.get(URL)
     if resp.status_code == 200:
+        st.write(resp.text)
         with open(f"journalsearch_{q}.html", "w", encoding='utf8') as fp:
              fp.write(resp.text)
         soup = BeautifulSoup(resp.text, "html.parser")

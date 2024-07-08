@@ -23,4 +23,4 @@ def load_scimagojr(q):
 st.markdown('<p class="title1">APP KIỂM TRA BÀI BÁO TRONG DANH MỤC SCOPUS</p>', unsafe_allow_html=True)
 soup, resp = load_scimagojr('17576385')
 #st.markdown(resp)
-components.iframe("https://www.scimagojr.com/journalsearch.php?q=21100774786&tip=sid&clean=0", height=500)
+components.iframe("https://www.scimagojr.com/journalsearch.php?q=21100774786&tip=sid&clean=0", height=1000)

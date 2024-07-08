@@ -8,9 +8,10 @@ def load_scimagojr(q):
     if resp.status_code == 200:
         with open(f"journalsearch_{q}.html", "w", encoding='utf8') as fp:
              fp.write(resp.text)
-        return BeautifulSoup(resp.text, "html.parser")
+        soup = BeautifulSoup(resp.text, "html.parser")
    
-    return None
+    return soup, resp.text
 
 st.markdown('<p class="title1">APP KIỂM TRA BÀI BÁO TRONG DANH MỤC SCOPUS</p>', unsafe_allow_html=True)
-load_scimagojr('17576385')
+soup, resp = load_scimagojr('17576385')
+st.markdown(resp)

@@ -24,3 +24,5 @@ st.markdown('<p class="title1">APP KIỂM TRA BÀI BÁO TRONG DANH MỤC SCOPUS<
 soup, resp = load_scimagojr('17576385')
 #st.markdown(resp)
 components.iframe("https://www.scimagojr.com/journalsearch.php?q=17576385", height=1000, scrolling=True)
+#components.iframe('"https://www.scimagojr.com/journalsearch.php?q=21100774786&amp;tip=sid&amp;exact=no" title="SCImago Journal &amp; Country Rank"><img border="0" src="https://www.scimagojr.com/journal_img.php?id=21100774786" alt="SCImago Journal &amp; Country Rank"  /></a>
+st.markdown('="https://www.scimagojr.com/journalsearch.php?q=21100774786&amp;tip=sid&amp;exact=no" title="SCImago Journal &amp; Country Rank"><img border="0" src="https://www.scimagojr.com/journal_img.php?id=21100774786" alt="SCImago Journal &amp; Country Rank"  /></a>')

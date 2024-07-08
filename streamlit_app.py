@@ -7,6 +7,7 @@ def load_scimagojr(q):
     st.write(URL)
     resp = requests.get(URL)
     st.write(resp.status_code)
+    st.write(resp.text)
     if resp.status_code == 200:
         st.write(resp.text)
        
